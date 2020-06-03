@@ -1,0 +1,12 @@
+{% extends 'base_generic.html' %}
+{% load static %}
+{% block content %}
+	<div id="box">
+		<img id="succes-icon" src="{% static 'images/check.png' %}">
+		<h4>Thank you for subscribing to a Premium Plan of ${{amount}}!</h4>
+		<p>Testing Logic</p>
+		<hr>
+		<a class="myButton" href="{% url 'index' %}">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}
